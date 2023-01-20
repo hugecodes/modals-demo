@@ -45,12 +45,27 @@
         <main class="modal-main">
             <div class="content">
                 <button type="button" id="myBtn">Open modal</button>
+                <button type="button" id="myBtn2">Open modal video</button>
             </div>
-            <!-- modal -->
+            <!-- modal login-->
             <div id="myModal" class="modal">
                 <div class="modal-content">
+                    <!-- <span class="close">&times;</span> -->
+                    <h2>title</h2>
+                    <img src="https://picsum.photos/304/196" alt="Video login">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nam impedit perspiciatis deserunt sit veritatis ev</p>
+                    <button type="button">&trade; Button connect</button>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- modal youtube -->
+            <div id="myModal2" class="modal">
+                <div class="modal-content modal-content__video">
                     <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
+                    <div class="video-modal__wrapper">
+                       <iframe class="video-modal__embed" id="video-modal-player" frameborder="0" allowfullscreen="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="LOST &amp; CROWNED | A Clash Short Film" width="100%" height="100%" src="https://www.youtube.com/embed/N0QqNGbpTK0?autoplay=1&amp;origin=https%3A%2F%2Fwww.thinkwithgoogle.com&amp;rel=0&amp;playsinline=0&amp;showinfo=1&amp;enablejsapi=1&amp;widgetid=2"></iframe> 
+                    </div>
+                    
                 </div>
             </div>
         </main>
@@ -58,27 +73,36 @@
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");
+        var modal2 = document.getElementById("myModal2");
 
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
+        var btn2 = document.getElementById("myBtn2");
 
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+        var span = document.querySelector("#myModal2 .close");
 
         // When the user clicks the button, open the modal 
         btn.onclick = function() {
         modal.style.display = "block";
         }
 
+        btn2.onclick = function() {
+            // modal2.classList.add("modal-show");
+        modal2.style.display = "block";
+        }
+
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
-        modal.style.display = "none";
+        modal2.style.display = "none";
         }
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
+            console.log(event.target);
         if (event.target == modal) {
             modal.style.display = "none";
+            modal2.style.display = "none";
         }
         }
     </script>
