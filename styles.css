@@ -79,6 +79,7 @@ body{
     right: 0;
     top: 20px;
     z-index: 6;
+    padding-bottom: 20px;
   }
   
   /* Modal Content */
@@ -131,9 +132,27 @@ body{
     cursor: pointer;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 600px) {
     .modal-content{
         background-color:green;
         margin-top: 195px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .modal-content{
+        background-color:pink;
+        margin-top: 275px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .modal-content{
+        background-color:brown;
+        margin-top: 178px;
+    }
+  }
+  @media screen and (min-width: 1441px) {
+    .modal-content{
+        background-color:blue;
+        margin-top: 208px;
     }
   }
