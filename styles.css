@@ -151,7 +151,7 @@ body{
   .close {
     color: #fff;
     position: absolute;
-    right: 133px;
+    right: 253px;
     transform: translateY(-100%);
     font-size: 40px;
     cursor: pointer;
