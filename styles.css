@@ -201,3 +201,35 @@ body{
         width: 36.875rem;
     }
   }
+
+  .video-modal__close-button {
+    position: absolute;
+    right: 0.5rem;
+    top: 0;
+    transform: translateY(-100%);
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.collapsible__trigger-label--is-hidden, .visually-hidden {
+    clip: rect(0 0 0 0);
+    border: 0;
+    height: 0.0625rem;
+    margin: -0.0625rem;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 0.0625rem;
+}
+
+.video-modal__close-button-icon {
+    fill: #fff;
+    height: 2.125rem;
+    width: 2.125rem;
+}
+
+.video-modal__close-button .times{
+    font-size: 38px;
+    color: white;
+}
